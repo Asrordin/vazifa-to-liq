@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url('Fraunces-Bold.woff2') format('woff2'),
+        url('Fraunces-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('Barlow-Regular.woff2') format('woff2'),
+        url('Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
