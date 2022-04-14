@@ -23,6 +23,7 @@
 
 
 html{
+    height: 100%;
     box-sizing: border-box;
 }
 *{
@@ -30,6 +31,10 @@ html{
 }
 
 body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
     margin: 0;
     padding: 0;
     font-family: 'Barlow' , 'Arial' , 'sans serif';
@@ -45,6 +50,9 @@ body{
  }
 
 
+ main{
+     flex-grow: 1;
+ }
  
  .visually-hidden {
     position: absolute;
@@ -371,12 +379,12 @@ color: #83888F;
 
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 808px){
     .container{
         max-width: 100%;
-        width: 768px;
+        width: 808px;
         margin: 0;
-        padding: 0;
+        padding: 0 20px;
     }
     .wrapper-header{
         padding: 40px;
@@ -387,13 +395,13 @@ color: #83888F;
         line-height: 15px;
     }
     .header-link__img{
-        
+
         width: 235px;
         height: 25px;
     }
     
     .section-heading{
-        margin: 0px 40px;
+        margin: 0;
     }
     .section-heading__content{
         
@@ -465,10 +473,7 @@ color: #83888F;
     }
     .section-wrapper{
         position: relative;
-        
-        max-width: 100%;
-        width: 688px;
-        margin: 0 auto;
+        margin: 0px;
         padding: 56px 0px 368px 0px;
         
         
@@ -522,7 +527,7 @@ color: #83888F;
         background-repeat: no-repeat;
     }
     .how-work{
-        margin: 0px 40px;
+        margin: 0px 0px;
         margin-top: 434px;
     }
     .how-work__item{
@@ -545,11 +550,16 @@ color: #83888F;
 
     }
     .wrapper-header{
-        justify-content: center;
+        justify-content: space-between;
+    }
+    .site-footer{
+        margin-top: 151px;
+        margin-left: auto;
+        
     }
     .wrapper-footer{
         display: block;
-        margin: 0px 40px;
+        margin: 0px;
         padding: 0;
         text-align: center;
     }
@@ -557,19 +567,20 @@ color: #83888F;
         padding-right: 32px;
     }
     .footer-link:not(:last-child){
-        
+        padding: 0;
         margin: 0;
     }
-   .footer-link{
-       
-   }
     .footer-content{
-        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 8px;
     }
+    
     .nav{
         display: flex;
         justify-content: center;
-        
+        margin: 0;
+        padding: 0;
     }
     
  }
